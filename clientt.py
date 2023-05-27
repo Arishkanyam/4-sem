@@ -10,22 +10,26 @@ except ConnectionError:
     print("Connection error")
 else:
     print(f"Connection with {host}:{port} established")
-
-    try:
-        sock.send(input('Enter message to send: ').encode())
-    except ConnectionError:
-        print('Sending message error')
-    else:
-        print(f'Message sent to {host}:{port}')
-
-        answer_blocks = []
-        while True:
-            answer_blocks.append(sock.recv(1024).decode())
-            if not answer_blocks[-1]:
+    print('hello world!')
+     
+    while True:
+        try:
+            message=(input('Enter message to send: ').encode())
+            if not message:
+                print('your connection is ended')
                 break
+            sock.send(message)
+        except ConnectionError:
+            print('Sending message error')
+        else:
+            print(f'Message sent to {host}:{port}')
 
-        answer = ''.join(answer_blocks)
-        print(f'{answer} gotten back from server')
-        sock.close()
+            #answer_blocks = []
+            answer_blocks=sock.recv(1024).decode() #append.,
+            sock.close ##
 
-input('Press Enter to exit...')
+            answer = ''.join(answer_blocks)
+            print(f'{answer} gotten back from server')
+
+            
+sock.close()

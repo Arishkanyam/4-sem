@@ -1,0 +1,1 @@
+main_folder = r'C:\Users\ancol\OneDrive\Рабочий стол\Praktikum proga\Unix'

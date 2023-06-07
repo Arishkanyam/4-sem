@@ -1,0 +1,31 @@
+Server started. Listening on localhost:5050
+Connected to the server at localhost:5050
+New user registered.
+Welcome,  registered!
+Received data from the server: "Welcome,  registered!"
+Received data from the server: "Echo: hi"
+Received message from 127.0.0.1: r
+: we"
+Received message from 127.0.0.1: grt
+r"
+Your connection is ended
+nnected
+Disconnected from the server
+Connected to the server at localhost:5050
+Welcome back,  registered!
+User authenticated successfully.
+Received message from 127.0.0.1: ess
+Received data from the server: "Welcome back,  registered!"
+Received data from the server: "Echo: ess"
+Your connection is ended
+nnected
+Disconnected from the server
+Connected to the server at localhost:5050
+Welcome back,  anna!
+User authenticated successfully.
+Received message from 127.0.0.1: ess
+Received message from 127.0.0.1: hi
+me back,  anna!"
+Received message from 127.0.0.1: w4
+Received data from the server: "Echo: ess"
+Received data from the server: "Echo: hi"
